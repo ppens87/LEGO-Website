@@ -9,41 +9,41 @@ module.exports = {
         browser.end()
     },
 
-    // 'log in and log out check': browser => {
-    //     let pageObjects = browser.page.pageObjects()
-    //     browser.url('https://shop.lego.com/en-US/')
-    //     pageObjects
-    // .click('@Annoying Banner')
-    //         .click('@Account')
-    //         .waitForElementVisible('@Sign In Button', 5000)
-    //         .click('@Sign In Button')
-    //     browser.pause(500)
-    //         .keys('TestQA6')
-    //         .keys(browser.Keys.TAB)
-    //         .keys('DevMountain')
-    //         .keys(browser.Keys.ENTER)
-    //     // .window_handles(function(result){
-    //     //     console.log(result.value)
-    //     // })
-    //     // .click('.check-order__status-link')
-    //     // .pause(1000)
-    //     // .expect.element('h2').text.to.equal('Log In')
-    //     // browser.pause()
-    //     // browser
-    //     //     .useXpath()
-    //     //     .waitForElementPresent('//div[@class="login default account-wrapper has-valueproposition"]', 5000)
-    //     //     .useCss()
-    //     // pageObjects
-    //     //     .setValue('@Username', 'TestQA6')
-    //     //     .setValue('@Password', 'DevMountain')
-    //     //     .click('@Log In Button')
-    //     // .click('@Account')
-    //     pageObjects
-    //         .waitForElementVisible('@Log Out Button', 5000)
-    //         .click('@Log Out Button')
-    //     browser.pause(1000)
+    'log in and log out check': browser => {
+        let pageObjects = browser.page.pageObjects()
+        browser.url('https://shop.lego.com/en-US/')
+        pageObjects
+            .click('@Annoying Banner')
+            .click('@Account')
+            .waitForElementVisible('@Sign In Button', 5000)
+            .click('@Sign In Button')
+        browser.pause(500)
+            .keys('TestQA6')
+            .keys(browser.Keys.TAB)
+            .keys('DevMountain')
+            .keys(browser.Keys.ENTER)
+        // .window_handles(function(result){
+        //     console.log(result.value)
+        // })
+        // .click('.check-order__status-link')
+        // .pause(1000)
+        // .expect.element('h2').text.to.equal('Log In')
+        // browser.pause()
+        // browser
+        //     .useXpath()
+        //     .waitForElementPresent('//div[@class="login default account-wrapper has-valueproposition"]', 5000)
+        //     .useCss()
+        // pageObjects
+        //     .setValue('@Username', 'TestQA6')
+        //     .setValue('@Password', 'DevMountain')
+        //     .click('@Log In Button')
+        // .click('@Account')
+        pageObjects
+            .waitForElementVisible('@Log Out Button', 5000)
+            .click('@Log Out Button')
+        browser.pause(1000)
 
-    // },
+    },
 
     // 'adding removing items from wishlist': browser => {
     //     let pageObjects = browser.page.pageObjects()
@@ -78,7 +78,6 @@ module.exports = {
         let pageObjects = browser.page.pageObjects()
         browser.url('https://shop.lego.com/en-US/')
         pageObjects
-            .click('@Annoying Banner')
             .waitForElementVisible('@LEGOLAND', 5000)
             .click('@LEGOLAND')
         browser.window_handles(function (result) {
